@@ -216,7 +216,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            this.errorProvider1.RightToLeftChanged += new System.EventHandler(this.btnSave_Click);
             // 
             // grpStatus
             // 
@@ -250,6 +249,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
